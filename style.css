@@ -1,0 +1,537 @@
+/*----- font------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+/*----- common style ------*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+main {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+                                    /*----------------
+                                     header part start
+                                    ---------------- */
+.header_contain{
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: space-evenly;
+    
+   
+}
+.header-title h1{
+    color: white;
+    font-size: 64px;
+    margin-top: 75px;
+  
+
+  
+}
+
+
+.btn{
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    color: white;
+    border: 1px solid #2D25A0 ;
+    
+}
+.btn:hover{
+ background-image: linear-gradient(to left, rgb(29 14 90), rgb(255 54 128));
+} 
+
+
+
+.header-banner img{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    
+}
+.animate-football img {
+    width: 95px;
+    height: 95px;
+    transform: translate(-18px, -308px);
+    margin-top: -80px;
+}
+.header-banner:hover .animate-football img{
+    transform: translate(-787px, -550px);
+    transition: transform 1s ease-out 0.7s;
+}
+
+.animate_kick img {
+    transform: translate(0px, -605px);
+    margin-top: -421px;
+}
+.header-banner:hover .animate_kick img {
+    transition: transform 0.5s ease-out 0.2s;
+    transform: rotate(4deg) translate(9px, -56px);
+    transform-origin: top right;
+}
+
+                            /*-----------------------
+                             player details css start 
+                             -----------------------*/
+
+  .container{
+      width: 1050px;
+      background: #ffffff;
+      margin-top: 43px;
+  }
+  .player-detail {
+    margin-right: 30px;
+    box-shadow: 1px 1px 12px grey;
+    padding: 15px 15px 25px 15px;
+
+    
+}                         
+.details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    grid-row-gap: 27px;
+}
+.player-banner img{
+    width: 100%;
+    height: 256px;
+}
+.player-banner img:hover{
+transform: scale(1.1);
+transition: transform 1s ease-in-out;
+}
+.name h2{
+  font-size: 28px;
+}
+.about p{
+    font-size: 16px;
+    text-align: justify;
+    
+}
+
+                            /*-----------------------
+                             player details css end 
+                             -----------------------*/
+
+
+
+/* Highlights part css start */
+
+.copa-highlight{
+    margin-top: 150px;
+    
+}
+.full-highlight{
+    display: flex;
+    align-items: center;
+}
+.Highlight{
+    margin-right: 130px;
+}
+.Highlight h1{
+font-size: 48px;
+}
+.Highlight p {
+    margin-top: 1;
+    margin-top: -28px;
+    text-align: justify;
+}  
+.copa-banner img {
+    width: 449px;
+    height: 374px;
+}
+
+/*------------------------------------ Highlights part css start ----------------------*/
+
+
+/* transfer market css start */
+
+.transfer{
+    margin-top: 110px;
+}
+.transfer-title h1 {
+    color: #152561;
+    text-align: center;
+    font-style: italic;
+    font-size: 47px;
+}
+.transfer-update{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2em;
+}
+
+.update {
+    width: 250px;
+    height: 313px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 2px 3px 14px blue;
+}
+
+.update img{
+    width: 100%;
+}
+.update:hover .photo-details{
+        display: block;
+        background-color: cornflowerblue;
+        color: white;
+        width: 250px;
+        text-align: center;
+    
+}
+.update:hover img{
+ transform: scale(1.2);
+ transition: transform 2s ease-in-out;
+}
+
+.photo-details {
+        position: absolute;
+        top: 155px;
+        display: none;
+        
+        
+    }
+    /*------------------------------------ transfer market css End ----------------------*/
+
+    /*------------------------ last section css start--------------- */
+    .fifa{
+        margin-top: 100px;
+    }
+    .last-section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 3em;
+      
+       
+    }
+    .last-sec-title h1 {
+        color: #152561;
+        font-size: 47px;
+        text-align: center;
+       
+    }
+    .section{
+      width: 428px;
+    }
+    .section img{
+width: 100%;
+    }
+.section h1{
+
+}
+.section p{
+
+}
+.section a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/*------------------------ last section css end--------------- */
+
+/* footer part start */
+
+.footer{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+    margin-right: 45px;
+}
+.icon {
+    color: #797575;
+    background: #80808073;
+    border-radius: 50%;
+    padding: 4px 7px;
+    margin-left: 6px;
+}
+.copyright {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 56px;
+}
+.ftr-sec{
+    margin-top: 160px;
+}
+
+/*--------------------------------------- footer part end --------------------------------------*/
+
+
+
+
+
+/* --------------------------------------miedia query start------------------------------------------ */
+
+
+
+
+/*-------------- 
+for mobile device
+------------- */
+
+@media only screen  and (max-width:688px)
+{
+   /* header part */
+    .animate-football, .animate_kick{
+       display: none;
+    }
+    header{
+        width: 100%;
+    }
+
+    .header_contain{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-title h1{
+        font-size: 47px;
+    }
+    .header-title .btn{
+
+        width: 122px;
+    height: 35px;
+    font-size: 14px;
+}
+.header-banner img{
+    width: 350px;
+    height: 310px;
+}
+
+
+/* player details start */
+.container{
+    width: 100%;
+}
+.details{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.player-detail{
+margin-left: 41px;
+margin-right: 41px;
+}
+
+
+/*--- highlight part--- */
+.copa-highlight{
+width: 100%;
+}
+.full-highlight{
+    flex-direction: column;
+        align-items: center;
+}
+.Highlight{
+width: 100%;
+}
+.Highlight h1{
+    font-size: 27px;
+    text-align: justify;
+    margin-left: 80px;
+    margin-bottom: 42px;
+}
+.Highlight p{
+margin-left: 82px;
+}
+#button{
+    margin-left: 81px;
+    margin-bottom: 20px;
+
+}
+.copa-banner img{
+  width: 100%;
+  height: auto;
+
+}
+
+/* Transfer market update start */
+
+.transfer{
+    width: 100%;
+}
+.transfer-title h1{
+font-size: 43px;
+}
+.transfer-update{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.update {
+   margin: 0 auto;
+
+}
+
+/* FIFA section start */
+.fifa{
+width: 100%;
+}
+
+.last-section{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.section{
+    width: 381px;
+    margin: 0 auto;
+}
+
+
+/* footer part start */
+.ftr-sec{
+    width: 100%;
+    margin-top: 45px;
+
+}
+
+.logo img{
+    width: 331px;
+}
+
+   
+}
+
+
+/*---------------------------------------- for tablet responsive---------------------------- */
+
+@media only screen and (min-width:688px)and (max-width:992px) {
+    
+    /* header part */
+    .animate-football, .animate_kick{
+        display: none;
+     }
+     header{
+         width: 100%;
+     }
+ 
+     .header_contain{
+         flex-direction: column;
+         align-items: center;
+     }
+     .header-title h1{
+         font-size: 76px;
+     }
+     .header-title .btn{
+ 
+     width: 122px;
+     height: 35px;
+     font-size: 16px;
+ }
+ .header-banner img{
+    width: 534px;
+    height: 393px;
+ }
+    
+    
+/* player details start */
+.container{
+    width: 100%;
+}
+.details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.player-detail{
+margin-left: 25px;
+margin-right: 25px;
+}
+
+
+/*--- highlight part--- */
+.copa-highlight{
+    width: 100%;
+    }
+    .full-highlight{
+        flex-direction: column;
+            align-items: center;
+    }
+    .Highlight{
+    width: 100%;
+    }
+    .Highlight h1{
+        font-size: 52px;
+        margin-left: 94px;
+        margin-bottom: 42px;
+        
+    }
+    
+    .Highlight p{
+    margin-left: 82px;
+    font-size: 24px;
+    }
+    #button{
+        margin-left: 81px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    
+    }
+    .copa-banner img{
+       width: 100%;
+       height: auto;
+    
+    }
+
+    /* Transfer market update start */
+
+.transfer{
+    width: 100%;
+}
+.transfer-title h1{
+font-size: 43px;
+}
+.transfer-update{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.update {
+    margin-left: 80px;
+
+}
+
+/* FIFA section start */
+.fifa{
+    width: 100%;
+    }
+    
+    .last-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section{
+        width: 100%;
+       
+    }
+    .section img{
+        margin-top: 20px;
+      
+    }
+    .section h1, p ,a{
+        margin-left: 5px;
+    }
+   
+
+    
+    
+    /* footer part start */
+.ftr-sec{
+    width: 100%;
+    margin-top: 45px;
+}
+
+.logo img{
+    width: 370px;
+}
+    
+}
